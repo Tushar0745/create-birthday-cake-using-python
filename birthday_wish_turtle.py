@@ -1,0 +1,152 @@
+import turtle
+
+wn = turtle.Screen()
+wn.title("PT projects")
+wn.bgcolor("yellow")
+
+
+t = turtle.Turtle()
+t.shape("circle")
+
+# dish for cake
+t.penup()
+t.setpos(-300, -50)
+
+t.speed(1)
+t.begin_fill()
+t.fillcolor("red")
+t.forward(600)
+t.left(90)
+t.forward(10)
+t.left(90)
+t.forward(600)
+t.left(90)
+t.forward(10)
+t.end_fill()
+
+t.left(180)
+t.forward(20)
+t.right(90)
+t.forward(100)
+t.left(90)
+
+# ground floar of cake
+t.begin_fill()
+t.fillcolor("blue")
+t.forward(100)
+t.right(90)
+t.forward(400)
+t.right(90)
+t.forward(100)
+t.end_fill()
+
+t.left(180)
+t.forward(100)
+t.left(90)
+t.forward(50)
+t.right(90)
+
+# middle floar of cake
+t.begin_fill()
+t.fillcolor("pink")
+t.forward(100)
+t.left(90)
+t.forward(300)
+t.left(90)
+t.forward(100)
+t.end_fill()
+
+t.left(180)
+t.forward(100)
+t.right(90)
+t.forward(50)
+t.left(90)
+
+# top floar of cake
+t.begin_fill()
+t.fillcolor("skyblue")
+t.forward(100)
+t.right(90)
+t.forward(200)
+t.right(90)
+t.forward(100)
+t.end_fill()
+t.pendown()
+
+# 1st circle
+t.penup()
+t.right(90)
+t.forward(200)
+t.right(90)
+t.forward(10)
+t.begin_fill()
+t.fillcolor("red")
+t.circle(10)
+t.end_fill()
+t.pendown()
+
+# 2nd circle
+t.penup()
+t.left(90)
+t.forward(50)
+t.left(90)
+t.forward(100)
+t.begin_fill()
+t.fillcolor("red")
+t.right(180)
+t.circle(10)
+t.end_fill()
+t.pendown()
+
+# 3 rd circle
+t.penup()
+t.right(90)
+t.forward(320)
+t.left(90)
+t.begin_fill()
+t.fillcolor("red")
+t.circle(10)
+t.end_fill()
+t.pendown()
+
+# 4 & 5 th circle
+t.penup()
+t.left(90)
+t.forward(20)
+t.right(90)
+t.forward(110)
+t.left(90)
+t.forward(40)
+t.begin_fill()
+t.fillcolor("red")
+t.circle(10)
+t.end_fill()
+t.right(90)
+t.forward(100)
+t.left(90)
+t.forward(120)
+t.left(90)
+t.begin_fill()
+t.fillcolor("red")
+t.circle(20)
+t.end_fill()
+t.pendown()
+
+# birthday wish title
+t.penup()
+t.setpos(340, -200)
+t.color("black")
+style = ("Times New Roman", 15, "italic")
+t.write("HAPPY  BIRTHDAY  DEAR", font=style,  align="Right")
+t.pendown()
+
+# birthday boy name
+t.penup()
+t.setpos(100, 100)
+t.color("black")
+style = ("Times New Roman", 15, "italic")
+t.write("-Tushar-", font=style, align="Right")
+t.pendown()
+
+t.hideturtle()
+turtle.done()
